@@ -5,12 +5,16 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {DashboardComponent} from './views/pages/dashboard/dashboard.component';
 import {CardViewComponent} from "./views/commons/card-view/card-view.component";
+import {PostComponent} from "./views/pages/post/post.component";
+import {TagComponent} from "./views/commons/tag/tag.component";
 
 @NgModule({
     declarations: [
         AppComponent,
         DashboardComponent,
-        CardViewComponent
+        CardViewComponent,
+        PostComponent,
+        TagComponent
     ],
     imports: [
         BrowserModule,

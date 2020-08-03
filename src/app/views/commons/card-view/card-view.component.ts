@@ -10,4 +10,7 @@ export class CardViewComponent {
     constructor() {
     }
 
+    public getTheme(): string {
+        return 'bg-color-option-' + (Math.floor(Math.random() * Math.floor(3)) + 1);
+    }
 }
