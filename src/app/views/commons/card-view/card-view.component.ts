@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Blog} from "../../../models/blog";
 
 @Component({
     selector: 'app-card-view',
@@ -6,6 +7,9 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./card-view.component.css']
 })
 export class CardViewComponent {
+
+    @Input()
+    public blog: Blog;
 
     constructor() {
     }

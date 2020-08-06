@@ -14,29 +14,10 @@
     </div>
 
     <div #blogList class="row py-2">
-        <div class="col-lg-6">
+        <div class="col-lg-6" *ngFor="let blog of blogs">
             <div class="border m-1">
-                <app-card-view></app-card-view>
+                <app-card-view [blog]="blog"></app-card-view>
             </div>
-
-        </div>
-        <div class="col-lg-6 ">
-            <div class="border m-1">
-                <app-card-view></app-card-view>
-            </div>
-
-        </div>
-        <div class="col-lg-6">
-            <div class="border m-1">
-                <app-card-view></app-card-view>
-            </div>
-
-        </div>
-        <div class="col-lg-6">
-            <div class="border m-1">
-                <app-card-view></app-card-view>
-            </div>
-
         </div>
     </div>
 </div>

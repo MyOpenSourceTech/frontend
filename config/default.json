@@ -1,0 +1,14 @@
+{
+  "backend": "http://localhost:8765/",
+  "components": {
+    "blog-server": {
+      "name": "blog-service"
+    },
+    "authentication-service": {
+      "name": "authentication-service"
+    }
+  },
+  "blogComponent": {
+    "pageSize": 10
+  }
+}

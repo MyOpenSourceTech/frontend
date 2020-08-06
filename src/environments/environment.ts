@@ -3,7 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+    production: false,
+    backend: "http://localhost:8765/",
+    components: {
+        blogServer: {
+            name: "blog-service"
+        },
+        authenticationService: {
+            name: "authentication-service"
+        }
+    },
+    blogComponent: {
+        pageSize: 5
+    }
 };
 
 /*
