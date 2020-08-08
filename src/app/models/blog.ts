@@ -1,10 +1,14 @@
 export class Blog {
-    private id: string;
+    private _id: string;
     private _title: string;
     private _createdBy: string;
     private _body: string;
     private _description: string;
     private _createdAt: Date;
+
+    get id(): string {
+        return this._id;
+    }
 
 
     get title(): string {
